@@ -1,0 +1,36 @@
+# !!! IMP: The first 15 lines are reserved for comments. PLEASE DO NOT REMOVE THEM. !!!
+# Allowed N values: a product of 2 prime numbers e.g. 143, 15, 35.
+# Allowed method values: "C" - for column-based multiplication method, "D" - for direct method, "H" - for hybrid method i.e. direct method with classical preprocessor
+# Allowed bit_length_type values: "EQUAL" - if p and q factors have same number of bits, "GENERAL" - no specific assumption
+# Allowed noise_model_device: "" - for ideal simulator, if is_simulator=True, "FAKEATHENS", "FAKEALMADEN", "FAKEMUMBAI", "FAKEMANHATTAN"
+# Allowed init_state: "EQUAL_SUPERPOS" - for all qubits in equal superposition, "ALL_ZEROS" - for all qubits in |0>, "ALL_ONES" - for all qubits in |1>
+# Allowed optimizer_label values: "COBYLA", "L-BFGS-B, "SPSA", "NELDER_MEAD"
+# Allowed optimizer_maxiter: any positive integer for maximum number of iterations/evaluations of the optimizer e.g. 1000, 1500, etc.
+# Allowed optimizer_tol: tolerance value for convergence e.g. 0.01, 1e-4, etc.
+# Allowed ansatz_type values: "CUSTOM" - for hardware-inspired ansatz, "QAOA" - applicable only for algorithm VQE
+# Allowed ansatz_init_param_values: "ZERO" - for all initial parameter values to be 0, "RANDOM" - for all initial parameters to be chosen randomly in [0,2*pi]
+# Allowed ansatz_num_layers: 2 (default), 3, 4, etc. Layers of rotation and entanglement gates for CUSTOM ansatz or alternate repeating layers for QAOA Ansatz
+# Allowed rotations values: ["ry","rz"] (default), "ry"
+# Allowed entanglement values: "cx" - for CNOT gate, "cz" - for Control-Z gate
+# Allowed entanglement_type values: "linear" (default), "full", "reverse_linear", "" - for no entanglement
+
+N: 3127
+method: "C"
+bit_length_type: "EQUAL"
+normalize_hamiltonian: "L2"
+is_simulator: True
+noise_model_device: ""
+init_state: "EQUAL_SUPERPOS"
+optimizer_label: "L_BFGS_B"
+optimizer_maxiter: 300
+optimizer_tol: 0.00001
+ansatz_type: "CUSTOM"
+ansatz_init_param_values: "RANDOM"
+ansatz_num_layers: 2
+custom_ansatz:
+  rotations: ["ry","rz"]
+  entanglement: "cx"
+  entanglement_type: "reverse_linear"
+  final_rotation_layer: True
+is_exact_solver: True
+is_apply_m3_mitigation: True

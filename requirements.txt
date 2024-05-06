@@ -1,0 +1,11 @@
+qiskit==0.45.1
+qiskit-aer==0.11.0
+qiskit-experiments==0.4.0
+qiskit-ibm-experiment==0.2.6
+qiskit-ibmq-provider==0.19.2
+qiskit-terra==0.45.1
+mthree==1.1.0
+PyYAML==6.0
+matplotlib==3.6.0
+pylatexenc==2.10
+tikzplotlib==0.10.1
