@@ -1,7 +1,7 @@
 # Factorisation of bi-prime integers using Variational Quantum Algorithm
 
 ## Description
-This project is part of my Master's thesis at the Indian Institute of Technology - Madras. The objective of the project is to leverage binary optimization to factorise bi-prime integers using a variational quantum algorithm.
+This project is part of my Master's thesis at the Indian Institute of Technology - Madras under the guidance of Prof. Prabha Mandayam. The objective of the project is to leverage binary optimization to factorise bi-prime integers using a variational quantum algorithm.
 
 As part of the project, I have explored the following two methods for creating the cost function for optimization:
 1. Direct factorisation method
