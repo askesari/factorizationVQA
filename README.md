@@ -104,4 +104,17 @@ To run the program, execute the following command:
 
     python3 run_integer_factorisation.py
 
+## References
+
+Following are the references that I used for writing the program.
+
+1. [Analyzing the performance of variational quantum factoring on a superconducting quantum processor](https://doi.org/10.1038/s41534-021-00478-z)
+2. [Quantum annealing for prime factorization](https://www.nature.com/articles/s41598-018-36058-z)
+3. [Hardware-efficient variational quantum eigensolver for small molecules and quantum magnets](https://www.nature.com/articles/nature23879)
+4. [A quantum approximate optimization algorithm](https://arxiv.org/abs/1411.4028)
+5. [IBM Quantum Documentation](https://docs.quantum.ibm.com/build)
+   
+## Author(s)
+
+Amit Shashikant Kesari
 
